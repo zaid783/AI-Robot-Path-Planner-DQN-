@@ -37,20 +37,14 @@ This project implements a **Deep Q-Network (DQN)** agent that learns to navigate
 
 <img width="399" height="105" alt="image" src="https://github.com/user-attachments/assets/fad7b207-b225-4ca9-8f8e-f250648438f3" />
 
-🎯 Results
-🧠 Learning Efficiency: Learns optimal paths in 200–500 episodes
+##🎯 Results
+–🧠 **Learning Efficiency:** – Learns optimal paths in 200–500 episodes
+–🏆 **Success Rate:** – Over 95% goal-reaching after training
+–🧭 **Path Optimization:** – Shortest route discovered via exploration-exploitation
 
-🏆 Success Rate: Over 95% goal-reaching after training
-
-🧭 Path Optimization: Shortest route discovered via exploration-exploitation
-
-🔧 Technologies Used
-Python 3.8+ – Core programming
-
-TensorFlow / Keras – Deep learning framework
-
-Streamlit – Interactive GUI
-
-NumPy – Numerical computations
-
-Matplotlib – Plotting episode rewards
+##🔧 Technologies Used
+**Python 3.8+** – Core programming
+**TensorFlow / Keras** – Deep learning framework
+**Streamlit** – Interactive GUI
+**NumPy** – Numerical computations
+**Matplotlib** – Plotting episode rewards
