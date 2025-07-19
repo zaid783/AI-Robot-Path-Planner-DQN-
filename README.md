@@ -1,48 +1,38 @@
-# AI-Robot-Path-Planner-DQN-
-🤖 AI Robot Path Planner using Deep Q-Network (DQN)
-An intelligent grid-based robot navigation system powered by Deep Reinforcement Learning
-🎯 Project Overview
-This project implements a Deep Q-Network (DQN) agent that learns to navigate through a grid world environment to reach a target destination. The agent uses reinforcement learning to discover optimal paths while avoiding inefficient routes.
-✨ Key Features
+# 🤖 AI Robot Path Planner using Deep Q-Network (DQN)
 
-🧠 Deep Q-Learning Algorithm - Neural network-based decision making
-🎮 Interactive Streamlit Dashboard - Real-time training visualization
-📊 Performance Tracking - Episode rewards and training progress charts
-🗺️ Visual Path Display - Grid-based route visualization with emojis
-⚙️ Configurable Parameters - Adjustable grid size and training episodes
-🚀 Real-time Simulation - Watch the trained agent navigate in real-time
+An intelligent grid-based robot navigation system powered by Deep Reinforcement Learning.
 
-🛠️ Technical Implementation
+---
 
-Environment: Custom GridWorld with start (🚩) and goal (🏁) positions
-Agent: DQN with experience replay and ε-greedy exploration
-Neural Network: 2-layer fully connected network (24-24-4 neurons)
-Reward System: +100 for goal reaching, -1 for each step (efficiency optimization)
-Training: Batch learning with memory buffer (2000 experiences)
+## 🎯 Project Overview
 
-🏗️ Architecture
-GridWorldEnv ←→ DQNAgent ←→ Neural Network
-     ↓              ↓           ↓
-State Space    Action Space   Q-Values
-   (x,y)      [Up,Down,L,R]   [Q0,Q1,Q2,Q3]
-🎯 Results
+This project implements a **Deep Q-Network (DQN)** agent that learns to navigate a 2D grid world from a **start** point to a **goal**, optimizing its route using Reinforcement Learning techniques.
 
-Learning Efficiency: Agent typically learns optimal paths within 200-500 episodes
-Success Rate: 95%+ goal reaching after proper training
-Path Optimization: Discovers shortest routes through exploration-exploitation balance
+---
 
-🔧 Technologies Used
+## ✨ Key Features
 
-Python 3.8+ - Core programming language
-TensorFlow/Keras - Deep learning framework
-Streamlit - Web application framework
-NumPy - Numerical computations
-Matplotlib - Data visualization
+- 🧠 **Deep Q-Learning Algorithm** – Neural network-based action decision system  
+- 🎮 **Interactive Streamlit Dashboard** – Real-time training and simulation  
+- 📊 **Performance Tracking** – Visualize episode rewards and Q-value learning  
+- 🗺️ **Visual Path Display** – Grid map with step-by-step emoji paths  
+- ⚙️ **Configurable Parameters** – Control grid size, episodes, and learning rate  
+- 🚀 **Real-Time Simulation** – See the agent learn and move in real time  
 
-🚀 Future Enhancements
+---
 
- Multi-agent pathfinding
- Dynamic obstacles integration
- 3D grid environment
- A* algorithm comparison
- Real robot deployment
+## 🛠️ Technical Implementation
+
+| Component       | Details                                                                      |
+|------------------|-------------------------------------------------------------------------------|
+| **Environment**  | Custom GridWorld with start (🚩) and goal (🏁) positions                     |
+| **Agent**        | DQN Agent with ε-greedy strategy and experience replay                      |
+| **Neural Net**   | Fully connected NN with 2 hidden layers (24 → 24 → 4 neurons)               |
+| **Reward System**| +100 for reaching goal, -1 per step to promote efficiency                   |
+| **Training**     | Batch training with replay memory (buffer size: 2000)                       |
+
+---
+
+## 🧠 System Architecture
+
+<img width="399" height="105" alt="image" src="https://github.com/user-attachments/assets/fad7b207-b225-4ca9-8f8e-f250648438f3" />
